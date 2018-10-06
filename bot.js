@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('I am ready!')
-    client.user.setStatus('Online')
-    client.user.setGame('Nxb Ninja Voltage')
+    console.log('I am ready!');
+    client.user.setStatus('Online');
+    client.user.setPresence({ game: { name: 'NxB Ninja Voltage', type: 0 } });
 });
 
 client.on('message', message => {
