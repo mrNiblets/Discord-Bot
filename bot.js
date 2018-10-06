@@ -3,8 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setStatus('Online');
-    bot.user.setGame('Nxb Ninja Voltage');
+    client.user.setStatus('Online');
+    client.user.setGame('Nxb Ninja Voltage');
 });
 
 client.on('message', message => {
