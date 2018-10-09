@@ -7,8 +7,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if ("@Naruto Uzumaki" in message.content) 
+    if ("@Naruto Uzumaki" in message.content) {
         message.channel.send('Dattebayo!');
+        }
 });
 
 // THIS  MUST  BE  THIS  WAY
